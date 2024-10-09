@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online FoodShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Online <span>FoodShop</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="header-content">
+            <h2>Welcome to Online FoodShop</h2>
+            <p>Order your favorite meals now!</p>
+            <a href="#order-now" class="btn">Order Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-cards">
+            <div class="card">
+                <img src="chef.png" alt="Chef Image">
+                <a href="#prices" class="card-link">Prices</a>
+            </div>
+           <div class="card">
+                <img src="food.png" alt="Food Specials">
+                <img src="food2.png" alt="Food Specials">
+                <img src="food3.png" alt="Food Specials">
+                <img src="food4.png" alt="Food Specials">
+                <img src="food5.png" alt="Food Specials">
+                <img src="food6.png" alt="Food Specials">
+                <a href="#specials" class="card-link">Specials</a>
+            </div>
+            <div class="card">
+                <img src="hotfood1.png" alt="food">
+                <img src="hotfood2.png" alt="Food">
+                <img src="hotfood4.png" alt="Food">
+                <img src="hotfood5.png" alt="Food">
+                <img src="hotfood6.png" alt="Food">
+                <img src="hotfood7.png" alt="Food">
+                <a href="#HOT-FOOD" class="card-link">HOT-FOOD</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+ 
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        // JavaScript function for toggling mobile menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
